@@ -1,0 +1,19 @@
+namespace backend.Models
+{
+  public class Bid
+  {
+    public Guid Id { get; set; }
+    public Guid ProjectId { get; set; }
+    public Guid BidderId { get; set; }
+    public decimal Amount { get; set; }
+    public BidStatus Status { get; set; }
+  }
+
+  public enum BidStatus
+  {
+    SUBMITTED,
+    WITHDRAWN,
+    ACCEPTED,
+    REJECTED
+  }
+}
