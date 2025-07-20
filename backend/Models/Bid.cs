@@ -6,6 +6,7 @@ namespace backend.Models
     public Guid ProjectId { get; set; }
     public Guid BidderId { get; set; }
     public decimal Amount { get; set; }
+    public DateTime SubmittedOn { get; set; }
     public BidStatus Status { get; set; }
   }
 
