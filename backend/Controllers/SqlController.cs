@@ -33,7 +33,7 @@ namespace backend.Controllers
             return Conflict(new { message = pgEx.MessageText });
           }
 
-          return StatusCode(500, new { message = pgEx.MessageText });
+          return StatusCode(500, new { message = pgEx.ToString() });
         }
 
         return StatusCode(500, new { message = ex.Message });

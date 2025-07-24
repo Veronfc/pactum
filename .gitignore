@@ -1,3 +1,4 @@
 .env
 cert
 *.pem
+*.ps1
