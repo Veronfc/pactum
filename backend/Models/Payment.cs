@@ -1,3 +1,5 @@
+using Humanizer;
+
 namespace backend.Models
 {
   public class Payment
@@ -8,14 +10,15 @@ namespace backend.Models
     public DateTime DueOn { get; set; }
     public string Terms { get; set; }
     public PaymentStatus Status { get; set; }
+    public string StatusString => Status.ToString().Humanize().Underscore().ToLower();
   }
   public enum PaymentStatus
   {
-    SCHEDULED,
-    DUE,
-    PROCESSING,
-    COMPLETED,
-    FAILED,
-    REFUNDED
+    Scheduled,
+    Due,
+    Processing,
+    Completed,
+    Failed,
+    Refunded
   }
 }

@@ -5,7 +5,7 @@ namespace backend.Models
     public Guid Id { get; set; }
     public string Username { get; set; }
     public string PasswordHash { get; set; }
-    public string PasswordSalt { get; set; }
+    public byte[] PasswordSalt { get; set; }
     public string? FullName { get; set; }
     public string? BusinessName { get; set; }
     public string? About { get; set; }

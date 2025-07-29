@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddSingleton<ISqlService, SqlService>();
+builder.Services.AddSingleton<ISeedService, SeedService>();
 
 var app = builder.Build();
 

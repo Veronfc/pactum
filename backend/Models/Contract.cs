@@ -1,4 +1,5 @@
 using System.Data.SqlTypes;
+using Humanizer;
 
 namespace backend.Models
 {
@@ -13,15 +14,16 @@ namespace backend.Models
     public DateTime OfferedOn { get; set; }
     public DateTime? AcceptedOn { get; set; }
     public ContractStatus Status { get; set; }
+    public string StatusString => Status.ToString().Humanize().Underscore().ToLower();
   }
 
   public enum ContractStatus
   {
-    OFFERED,
-    ACTIVE,
-    DELIVERED,
-    APPROVED,
-    DISPUTED,
-    CANCELLED
+    Offered,
+    Active,
+    Delivered,
+    Approved,
+    Disputed,
+    Cancelled
   }
 }

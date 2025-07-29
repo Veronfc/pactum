@@ -1,3 +1,5 @@
+using Humanizer;
+
 namespace backend.Models
 {
   public class Project
@@ -10,6 +12,7 @@ namespace backend.Models
     public DateTime? OpenedOn { get; set; }
     public decimal? StartingAmount { get; set; }
     public ProjectStatus Status { get; set; }
+    public string StatusString => Status.ToString().Humanize().Underscore().ToLower();
   }
 
   public enum ProjectStatus

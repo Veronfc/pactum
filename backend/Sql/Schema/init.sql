@@ -29,6 +29,15 @@ CREATE INDEX index_users_based_in ON users (based_in);
 CREATE INDEX index_users_joined_on ON users (joined_on);
 
 
+-- CREATE TABLE contractor_profiles (
+--   user_id uuid REFERENCES users (id) NOT NULL
+-- );
+
+-- CREATE TABLE client_profiles (
+--   user_id uuid REFERENCES users (id) NOT NULL
+-- );
+
+
 CREATE TYPE projectstatus as ENUM (
   'draft',
   'open',

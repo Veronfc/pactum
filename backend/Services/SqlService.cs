@@ -18,7 +18,7 @@ namespace backend.Services
 
     public string GetSql(string name)
     {
-      string resourceName = $"backend.Sql.{name}";
+      string resourceName = $"backend.Sql.{name}.sql";
 
       using Stream stream = _assembly.GetManifestResourceStream(resourceName) ?? throw new FileNotFoundException($"Embedded resource {resourceName} not found");
 

@@ -1,3 +1,5 @@
+using Humanizer;
+
 namespace backend.Models
 {
   public class Bid
@@ -8,13 +10,14 @@ namespace backend.Models
     public decimal Amount { get; set; }
     public DateTime SubmittedOn { get; set; }
     public BidStatus Status { get; set; }
+    public string StatusString => Status.ToString().Humanize().Underscore().ToLower();
   }
 
   public enum BidStatus
   {
-    SUBMITTED,
-    WITHDRAWN,
-    ACCEPTED,
-    REJECTED
+    Submitted,
+    Withdrawn,
+    Accepted,
+    Rejected
   }
 }
