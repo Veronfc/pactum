@@ -53,7 +53,7 @@ CREATE TABLE projects (
   description text NOT NULL,
   drafted_on timestamptz DEFAULT CURRENT_TIMESTAMP NOT NULL,
   opened_on timestamptz,
-  starting_amount money,
+  starting_amount numeric(10,2),
   status projectstatus DEFAULT 'draft' NOT NULL
 );
 
@@ -84,7 +84,7 @@ CREATE TABLE bids (
   id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
   project_id uuid REFERENCES projects (id) NOT NULL,
   bidder_id uuid REFERENCES users (id) NOT NULL,
-  amount money NOT NULL,
+  amount numeric(10,2) NOT NULL,
   submitted_on timestamptz DEFAULT CURRENT_TIMESTAMP NOT NULL,
   status bidstatus DEFAULT 'submitted' NOT NULL
 );
@@ -116,7 +116,7 @@ CREATE TABLE contracts (
   project_id uuid REFERENCES projects (id) NOT NULL,
   bid_id uuid REFERENCES bids (id) NOT NULL,
   terms text NOT NULL,
-  agreed_value money NOT NULL,
+  agreed_value numeric(10,2) NOT NULL,
   offered_on timestamptz DEFAULT CURRENT_TIMESTAMP NOT NULL,
   accepted_on timestamptz,
   status contractstatus DEFAULT 'offered' NOT NULL
@@ -148,7 +148,7 @@ CREATE TYPE paymentstatus as ENUM (
 CREATE TABLE payments (
   id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
   contract_id uuid REFERENCES contracts (id) NOT NULL,
-  amount money NOT NULL,
+  amount numeric(10,2) NOT NULL,
   due_on timestamptz DEFAULT CURRENT_TIMESTAMP NOT NULL,
   terms text NOT NULL,
   status paymentstatus DEFAULT 'scheduled' NOT NULL
