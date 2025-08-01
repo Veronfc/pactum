@@ -1,8 +1,8 @@
 SELECT
-    projects.id as id,
+    projects.id AS id,
     title,
-    count(*) as bids,
-    round(avg(bids.amount), 2) as average_bid
+    count(*) AS bids,
+    round(avg(bids.amount), 2) AS average_bid
 FROM projects
 INNER JOIN bids
 ON projects.id = bids.project_id

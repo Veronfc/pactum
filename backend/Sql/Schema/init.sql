@@ -6,15 +6,24 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 
 
 CREATE TABLE users (
-  id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
-  username varchar(30) NOT NULL UNIQUE,
-  password_hash text NOT NULL,
-  password_salt bytea NOT NULL,
+  id uuid 
+    DEFAULT gen_random_uuid() 
+    PRIMARY KEY,
+  username varchar(30) 
+    NOT NULL 
+    UNIQUE,
+  password_hash text 
+    NOT NULL,
+  password_salt bytea 
+    NOT NULL,
   full_name varchar(100),
-  business_name varchar(200) UNIQUE,
+  business_name varchar(200) 
+    UNIQUE,
   about text,
   based_in text,
-  joined_on timestamptz DEFAULT CURRENT_TIMESTAMP NOT NULL
+  joined_on timestamptz 
+    DEFAULT CURRENT_TIMESTAMP 
+    NOT NULL
 );
 
 -- Searching indices
@@ -38,7 +47,7 @@ CREATE INDEX index_users_joined_on ON users (joined_on);
 -- );
 
 
-CREATE TYPE projectstatus as ENUM (
+CREATE TYPE projectstatus AS enum (
   'draft',
   'open',
   'in_progress',
@@ -47,14 +56,29 @@ CREATE TYPE projectstatus as ENUM (
 );
 
 CREATE TABLE projects (
-  id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
-  creator_id uuid REFERENCES users (id) NOT NULL,
-  title varchar(200) NOT NULL,
-  description text NOT NULL,
-  drafted_on timestamptz DEFAULT CURRENT_TIMESTAMP NOT NULL,
-  opened_on timestamptz,
-  starting_amount numeric(10,2),
-  status projectstatus DEFAULT 'draft' NOT NULL
+  id uuid 
+    DEFAULT gen_random_uuid() 
+    PRIMARY KEY,
+  creator_id uuid 
+    REFERENCES users (id) 
+    NOT NULL,
+  title varchar(200) 
+    NOT NULL,
+  description text 
+    NOT NULL,
+  is_modular boolean 
+    DEFAULT FALSE 
+    NOT NULL,
+  drafted_on timestamptz 
+    DEFAULT CURRENT_TIMESTAMP 
+    NOT NULL,
+  opened_on timestamptz
+    CHECK (opened_on >= drafted_on),
+  starting_amount numeric(10,2)
+    CHECK (starting_amount > 0),
+  status projectstatus DEFAULT 'draft' 
+    NOT NULL,
+  CHECK (status != 'open' OR opened_on IS NOT NULL)
 );
 
 -- Join indices
@@ -73,7 +97,49 @@ CREATE INDEX index_projects_title_trgm ON projects USING GIN (title gin_trgm_ops
 CREATE INDEX index_projects_description_trgm ON projects USING GIN (description gin_trgm_ops);
 
 
-CREATE TYPE bidstatus as ENUM (
+CREATE TYPE modulestatus AS enum (
+  'draft',
+  'open',
+  'in_progress',
+  'completed',
+  'cancelled'
+);
+
+CREATE TABLE modules (
+  id uuid 
+    DEFAULT gen_random_uuid() 
+    PRIMARY KEY,
+  project_id uuid 
+    REFERENCES projects (id) 
+    NOT NULL,
+  title varchar(200) 
+    NOT NULL,
+  description text 
+    NOT NULL,
+  starting_amount numeric(10,2)
+    CHECK (starting_amount > 0),
+  status modulestatus 
+    DEFAULT 'draft' 
+    NOT NULL,
+);
+
+-- Join indices
+CREATE INDEX index_modules_project_id ON modules (project_id);
+
+-- Sorting indices
+CREATE INDEX index_modules_drafted_on ON modules (drafted_on);
+CREATE INDEX index_modules_opened_on ON modules (opened_on);
+CREATE INDEX index_modules_starting_amount ON modules (starting_amount);
+
+-- Filtering indices
+CREATE INDEX index_modules_status ON modules (status);
+
+-- Searching indices
+CREATE INDEX index_modules_title_trgm ON modules USING GIN (title gin_trgm_ops);
+CREATE INDEX index_modules_description_trgm ON modules USING GIN (description gin_trgm_ops);
+
+
+CREATE TYPE bidstatus AS enum (
   'submitted',
   'withdrawn',
   'accepted',
@@ -81,12 +147,29 @@ CREATE TYPE bidstatus as ENUM (
 );
 
 CREATE TABLE bids (
-  id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
-  project_id uuid REFERENCES projects (id) NOT NULL,
-  bidder_id uuid REFERENCES users (id) NOT NULL,
-  amount numeric(10,2) NOT NULL,
-  submitted_on timestamptz DEFAULT CURRENT_TIMESTAMP NOT NULL,
-  status bidstatus DEFAULT 'submitted' NOT NULL
+  id uuid 
+    DEFAULT gen_random_uuid() 
+    PRIMARY KEY,
+  bidder_id uuid 
+    REFERENCES users (id) 
+    NOT NULL,
+  project_id uuid 
+    REFERENCES projects (id),
+  module_id uuid 
+    REFERENCES modules (id),
+  amount numeric(10,2) 
+    NOT NULL 
+    CHECK (amount > 0),
+  submitted_on timestamptz 
+    DEFAULT CURRENT_TIMESTAMP 
+    NOT NULL,
+  status bidstatus 
+    DEFAULT 'submitted' 
+    NOT NULL,
+  CHECK (
+    (project_id IS NOT NULL AND module_id IS NULL) OR
+    (module_id IS NOT NULL AND project_id IS NULL)
+  )
 );
 
 -- Join indices
@@ -101,7 +184,7 @@ CREATE INDEX index_bids_submitted_on ON bids (submitted_on);
 CREATE INDEX index_bids_status ON bids (status);
 
 
-CREATE TYPE contractstatus as ENUM (
+CREATE TYPE contractstatus AS enum (
   'offered',
   'active',
   'delivered',
@@ -111,15 +194,32 @@ CREATE TYPE contractstatus as ENUM (
 );
 
 CREATE TABLE contracts (
-  id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
-  contractor_id uuid REFERENCES users (id) NOT NULL,
-  project_id uuid REFERENCES projects (id) NOT NULL,
-  bid_id uuid REFERENCES bids (id) NOT NULL,
-  terms text NOT NULL,
-  agreed_value numeric(10,2) NOT NULL,
-  offered_on timestamptz DEFAULT CURRENT_TIMESTAMP NOT NULL,
-  accepted_on timestamptz,
-  status contractstatus DEFAULT 'offered' NOT NULL
+  id uuid 
+    DEFAULT gen_random_uuid() 
+    PRIMARY KEY,
+  contractor_id uuid 
+    REFERENCES users (id) 
+    NOT NULL,
+  project_id uuid 
+    REFERENCES projects (id) 
+    NOT NULL,
+  bid_id uuid 
+    REFERENCES bids (id) 
+    NOT NULL,
+  terms text 
+    NOT NULL,
+  agreed_value numeric(10,2) 
+    NOT NULL
+    CHECK (agreed_value > 0),
+  offered_on timestamptz 
+    DEFAULT CURRENT_TIMESTAMP 
+    NOT NULL
+  accepted_on timestamptz
+    CHECK (accepted_on >= offered_on),
+  status contractstatus 
+    DEFAULT 'offered' 
+    NOT NULL,
+  CHECK (status != 'active' OR accepted_on IS NOT NULL)
 );
 
 -- Join indices
@@ -136,7 +236,7 @@ CREATE INDEX index_contracts_accepted_on ON contracts (accepted_on);
 CREATE INDEX index_contracts_status ON contracts (status);
 
 
-CREATE TYPE paymentstatus as ENUM (
+CREATE TYPE paymentstatus AS enum (
   'scheduled',
   'due',
   'processing',
@@ -146,12 +246,23 @@ CREATE TYPE paymentstatus as ENUM (
 );
 
 CREATE TABLE payments (
-  id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
-  contract_id uuid REFERENCES contracts (id) NOT NULL,
-  amount numeric(10,2) NOT NULL,
-  due_on timestamptz DEFAULT CURRENT_TIMESTAMP NOT NULL,
-  terms text NOT NULL,
-  status paymentstatus DEFAULT 'scheduled' NOT NULL
+  id uuid 
+    DEFAULT gen_random_uuid() 
+    PRIMARY KEY,
+  contract_id uuid 
+    REFERENCES contracts (id) 
+    NOT NULL,
+  amount numeric(10,2) 
+    NOT NULL
+    CHECK (amount > 0),
+  due_on timestamptz 
+    DEFAULT CURRENT_TIMESTAMP 
+    NOT NULL
+  terms text 
+    NOT NULL,
+  status paymentstatus 
+    DEFAULT 'scheduled' 
+    NOT NULL
 );
 
 -- Join indices

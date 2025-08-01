@@ -1,15 +1,17 @@
 INSERT INTO bids (
     id,
-    project_id,
     bidder_id,
+    project_id,
+    module_id,
     amount,
     submitted_on,
     status
 ) VALUES (
     @Id,
-    @ProjectId,
     @BidderId,
+    @ProjectId,
+    @ModuleId,
     @Amount,
     @SubmittedOn,
-    CAST(@StatusString AS bidstatus)
+    @StatusString::bidstatus
 );

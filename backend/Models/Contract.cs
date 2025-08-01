@@ -1,6 +1,3 @@
-using System.Data.SqlTypes;
-using Humanizer;
-
 namespace backend.Models
 {
   public class Contract
@@ -14,7 +11,7 @@ namespace backend.Models
     public DateTime OfferedOn { get; set; }
     public DateTime? AcceptedOn { get; set; }
     public ContractStatus Status { get; set; }
-    public string StatusString => Status.ToString().Humanize().Underscore().ToLower();
+    public string StatusString => Status.ToString().ToLower();
   }
 
   public enum ContractStatus

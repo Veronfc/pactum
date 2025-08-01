@@ -8,6 +8,7 @@ namespace backend.Models
     public Guid CreatorId { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }
+    public bool IsModular { get; set; }
     public DateTime DraftedOn { get; set; }
     public DateTime? OpenedOn { get; set; }
     public decimal? StartingAmount { get; set; }

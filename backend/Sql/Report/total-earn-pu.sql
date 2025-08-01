@@ -1,5 +1,5 @@
 SELECT
-    users.id as id,
+    users.id AS id,
     username,
     sum(
         CASE

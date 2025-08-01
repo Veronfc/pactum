@@ -1,21 +1,19 @@
-INSERT INTO projects (
+INSERT INTO modules (
     id,
-    creator_id,
+    project_id,
     title,
     description,
-    is_modular,
     drafted_on,
     opened_on,
     starting_amount,
     status
 ) VALUES (
     @Id,
-    @CreatorId,
+    @ProjectId,
     @Title,
     @Description,
-    @IsModular,
     @DraftedOn,
     @OpenedOn,
     @StartingAmount,
-    @StatusString::projectsstatus
+    @StatusString::modulestatus
 );

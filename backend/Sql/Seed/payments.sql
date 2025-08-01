@@ -11,5 +11,5 @@ INSERT INTO payments (
     @Amount,
     @DueOn,
     @Terms,
-    CAST(@StatusString AS paymentstatus)
+    @StatusString::paymentstatus
 );

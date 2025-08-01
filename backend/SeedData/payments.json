@@ -1,402 +1,162 @@
 [
-  {
-    "id": "ddcdd74b-5fa0-400f-af30-9a955882c873",
-    "contractId": "68825ed7-3b3d-4170-a8c0-60dffb88faf2",
-    "amount": 3140.54,
-    "dueOn": "2025-06-26T20:42:43",
-    "terms": "Travel base our myself election. Remember smile official. Mind heart day sound.",
-    "status": "due"
-  },
-  {
-    "id": "d1cc4f78-48c2-494b-8abe-6fcc563d6884",
-    "contractId": "04e84078-a4c2-40b4-aa07-1bca3261b9a7",
-    "amount": 4197.26,
-    "dueOn": "2025-07-28T11:42:54",
-    "terms": "Land record class Democrat hundred. Song pass range appear home player.",
-    "status": "refunded"
-  },
-  {
-    "id": "7291e37f-9553-46af-abb9-73b1afd61bc7",
-    "contractId": "b1098da6-78b1-452c-ab96-5a1e5ca32dcb",
-    "amount": 1679.6,
-    "dueOn": "2025-01-14T18:27:59",
-    "terms": "Good house only military say attention. Near risk next on.",
-    "status": "refunded"
-  },
-  {
-    "id": "02feb031-9339-4d47-a6a2-5d47a22ec143",
-    "contractId": "54bd285e-ab36-4cfc-9433-189f16dff93c",
-    "amount": 7692.03,
-    "dueOn": "2025-07-25T10:35:53",
-    "terms": "Turn put professional pass. When summer he firm together thing off.",
-    "status": "processing"
-  },
-  {
-    "id": "d979caa0-2bae-4794-a1bc-240caa9b1c1f",
-    "contractId": "bb7ceeba-183e-408b-98d3-c148619d70cb",
-    "amount": 8020.12,
-    "dueOn": "2025-07-09T19:09:38",
-    "terms": "Number without rather sport. Sound new task cultural son. List act instead care.",
-    "status": "scheduled"
-  },
-  {
-    "id": "cf0d9aee-3f23-4e24-83d8-60ac6a49a989",
-    "contractId": "3b4b77b6-102a-48a7-891f-697e27c07e89",
-    "amount": 7093.58,
-    "dueOn": "2025-07-12T04:14:14",
-    "terms": "Foot member simple land bad party. Place certain cold space front piece occur.",
-    "status": "scheduled"
-  },
-  {
-    "id": "4cf7b2cc-8ae5-4144-b42c-3d3a9f0a45e7",
-    "contractId": "dd37009d-8898-471d-ac65-13a06b165cfe",
-    "amount": 1438.92,
-    "dueOn": "2025-07-28T16:40:17",
-    "terms": "Professional team foot.",
-    "status": "refunded"
-  },
-  {
-    "id": "73e8082c-8560-4cc4-8e79-684b317558aa",
-    "contractId": "8a7fe86c-6cf1-4348-8a43-a001a6be44ba",
-    "amount": 5161.78,
-    "dueOn": "2025-07-26T13:55:32",
-    "terms": "Do character management. Inside size marriage he recent all. Such weight argue simply.",
-    "status": "refunded"
-  },
-  {
-    "id": "71c7b360-23d2-4673-b274-2a1591cfb195",
-    "contractId": "04e84078-a4c2-40b4-aa07-1bca3261b9a7",
-    "amount": 4858.97,
-    "dueOn": "2025-07-21T15:03:10",
-    "terms": "List race fine follow pick. Seat near business. Police cup thought tell design both plan.",
-    "status": "processing"
-  },
-  {
-    "id": "d274bbb1-e7a9-4a43-bf4c-78dc751b03b3",
-    "contractId": "9483fca4-6b95-4444-add2-cd592a6865f5",
-    "amount": 4603.19,
-    "dueOn": "2025-07-26T20:48:06",
-    "terms": "Whether best rise mother country. Prevent now way next newspaper second short.",
-    "status": "completed"
-  },
-  {
-    "id": "105ba554-ef72-46be-972a-4cff2899e17d",
-    "contractId": "54bd285e-ab36-4cfc-9433-189f16dff93c",
-    "amount": 4985.91,
-    "dueOn": "2025-07-25T00:03:00",
-    "terms": "Science drug per challenge. Add really born late age.",
-    "status": "due"
-  },
-  {
-    "id": "4d1b8a82-a8f5-413c-b362-ab652711a929",
-    "contractId": "3bf91d22-2e91-47c7-93e3-96ff19a85855",
-    "amount": 1965.5,
-    "dueOn": "2025-07-24T20:00:45",
-    "terms": "Exist smile peace apply. At produce production.",
-    "status": "failed"
-  },
-  {
-    "id": "fd17a891-5afd-47bc-8d74-4e19aaff0200",
-    "contractId": "bb72597f-aa95-4d77-84fb-fe4e0733f1c0",
-    "amount": 5598.44,
-    "dueOn": "2025-05-16T13:11:51",
-    "terms": "Majority season adult range green few. Every artist election hit yourself wrong want.",
-    "status": "due"
-  },
-  {
-    "id": "e391d3e0-3a59-410b-b26c-772ec2ef7065",
-    "contractId": "324c96b8-3f86-4104-abac-ef69465b6b1c",
-    "amount": 2090.93,
-    "dueOn": "2025-05-27T12:57:43",
-    "terms": "Ok range dark catch. Travel involve training show prevent north citizen.",
-    "status": "completed"
-  },
-  {
-    "id": "43ceaf3c-7642-4084-a917-844027ae962c",
-    "contractId": "39cf76d4-4cad-471d-b44a-4c253475826a",
-    "amount": 8477.84,
-    "dueOn": "2025-07-06T16:08:32",
-    "terms": "Capital ago worry pay. Note discuss discussion reach grow read live maybe.",
-    "status": "failed"
-  },
-  {
-    "id": "5c493dbb-1327-4c25-aaee-60b449014b0e",
-    "contractId": "96a0b5b2-988b-447b-9d86-84e9bbf36ff8",
-    "amount": 7708.55,
-    "dueOn": "2025-07-25T20:36:23",
-    "terms": "Voice occur movie political region although body lead. There early Mrs. Newspaper might piece.",
-    "status": "processing"
-  },
-  {
-    "id": "33d49ea2-6202-486d-b198-26c397a330e3",
-    "contractId": "4712c4d4-cfa9-41d9-9391-584bfe84c2f4",
-    "amount": 3537.79,
-    "dueOn": "2025-06-16T00:09:01",
-    "terms": "Bed food possible represent clearly run before. Plant be religious risk window partner civil.",
-    "status": "failed"
-  },
-  {
-    "id": "d5381618-df7f-4a50-a22b-d21b589a9061",
-    "contractId": "b1098da6-78b1-452c-ab96-5a1e5ca32dcb",
-    "amount": 11355.96,
-    "dueOn": "2025-07-04T17:05:51",
-    "terms": "Indicate condition public particularly.",
-    "status": "completed"
-  },
-  {
-    "id": "94063641-4f91-4e5d-8536-69fc0c2d1775",
-    "contractId": "5a38038f-8dcd-4b63-b7c4-efa21a277d78",
-    "amount": 4776.66,
-    "dueOn": "2025-07-21T16:41:11",
-    "terms": "Wide exactly all worker. Move coach paper cost bring site final tax. Even beautiful theory.",
-    "status": "processing"
-  },
-  {
-    "id": "0217fc72-b3a1-4262-a531-dddff088ab4b",
-    "contractId": "5a38038f-8dcd-4b63-b7c4-efa21a277d78",
-    "amount": 3742.23,
-    "dueOn": "2025-07-28T15:11:16",
-    "terms": "Quality car right least require mission about. Reach organization beautiful.",
-    "status": "processing"
-  },
-  {
-    "id": "83347ec6-334a-4df3-999b-6846031e7231",
-    "contractId": "f5ae132f-746c-49e9-bd4d-1f8946795617",
-    "amount": 1801.58,
-    "dueOn": "2025-05-08T11:56:51",
-    "terms": "Address performance method deal. Near even wall sound off commercial.",
-    "status": "due"
-  },
-  {
-    "id": "4bbddc1d-2b86-4229-9177-d9041bef215b",
-    "contractId": "3bf91d22-2e91-47c7-93e3-96ff19a85855",
-    "amount": 2385.87,
-    "dueOn": "2025-07-25T12:36:37",
-    "terms": "Design catch oil sense. Serious produce laugh.",
-    "status": "completed"
-  },
-  {
-    "id": "49db0269-d1dc-493c-833b-be4d723e87d9",
-    "contractId": "4c51ea4f-9f34-4db3-855d-a1b0c94715fa",
-    "amount": 1085.96,
-    "dueOn": "2025-07-25T13:51:01",
-    "terms": "Worry identify camera family hard nature apply reflect.",
-    "status": "completed"
-  },
-  {
-    "id": "b59008c7-851a-4b05-9014-947ad26a7dac",
-    "contractId": "3bf91d22-2e91-47c7-93e3-96ff19a85855",
-    "amount": 3878.55,
-    "dueOn": "2025-07-23T14:32:20",
-    "terms": "Care author administration return. Price window career case south team throw.",
-    "status": "refunded"
-  },
-  {
-    "id": "5e158c0b-1567-4dd7-b6c1-13715723aaf9",
-    "contractId": "8a7fe86c-6cf1-4348-8a43-a001a6be44ba",
-    "amount": 5130.84,
-    "dueOn": "2025-07-27T10:15:56",
-    "terms": "Travel school process have. End red machine son. Garden base certain. Study sell include himself.",
-    "status": "scheduled"
-  },
-  {
-    "id": "d4679582-1dd8-41c7-ad71-0bf4645f1df2",
-    "contractId": "d74ce654-9704-45ad-8ccf-44bc416c06cd",
-    "amount": 6092.13,
-    "dueOn": "2025-06-13T18:11:01",
-    "terms": "Natural pull story activity best billion. Goal rise edge alone people arm order.",
-    "status": "failed"
-  },
-  {
-    "id": "2249a8db-2dad-4483-a5c4-4f4801914bd3",
-    "contractId": "39cf76d4-4cad-471d-b44a-4c253475826a",
-    "amount": 7899.0,
-    "dueOn": "2025-07-02T23:18:46",
-    "terms": "Show realize property show either. Everyone artist home you. Western enough key man up.",
-    "status": "completed"
-  },
-  {
-    "id": "da8459d6-abf7-46d0-9c03-be88f7399d39",
-    "contractId": "d8def275-9501-46bb-9380-199ce2615c6a",
-    "amount": 5778.89,
-    "dueOn": "2025-07-04T20:46:34",
-    "terms": "Front return if deep. Learn question them chance often under already. Major affect trade peace.",
-    "status": "completed"
-  },
-  {
-    "id": "3270639c-63a5-4c2a-9e78-4ce99df8d880",
-    "contractId": "bb7ceeba-183e-408b-98d3-c148619d70cb",
-    "amount": 10460.94,
-    "dueOn": "2025-07-09T02:48:23",
-    "terms": "Organization past as dark front structure scene. Food wish office case student soldier.",
-    "status": "completed"
-  },
-  {
-    "id": "03f76df0-2d86-4c8d-b0f4-87d0f75664e3",
-    "contractId": "8a7fe86c-6cf1-4348-8a43-a001a6be44ba",
-    "amount": 860.0,
-    "dueOn": "2025-07-28T08:17:52",
-    "terms": "Beyond suggest partner sing.\nBall account unit religious order exist really.",
-    "status": "processing"
-  },
-  {
-    "id": "bb9a22dc-6ed6-42ab-8333-6a09b9ed8ba5",
-    "contractId": "39cf76d4-4cad-471d-b44a-4c253475826a",
-    "amount": 5689.05,
-    "dueOn": "2025-07-10T17:38:19",
-    "terms": "Worry with peace television. Medical less phone decade apply both chance.",
-    "status": "completed"
-  },
-  {
-    "id": "75c22c7b-fe9e-4347-ae63-5519c69c15a2",
-    "contractId": "5f212d86-859c-41cc-97b5-2eb360a3e604",
-    "amount": 4339.77,
-    "dueOn": "2025-07-16T00:13:42",
-    "terms": "For better scene thank. Through available one approach job democratic.",
-    "status": "refunded"
-  },
-  {
-    "id": "365c510e-f783-4139-9dd4-b9f8bbf6d7e1",
-    "contractId": "5a38038f-8dcd-4b63-b7c4-efa21a277d78",
-    "amount": 3769.26,
-    "dueOn": "2025-07-21T10:45:35",
-    "terms": "Address into their easy its. Through option chance off above. Always likely shoulder.",
-    "status": "processing"
-  },
-  {
-    "id": "4c77c6f8-a4d3-48ff-b469-0494e15fbb85",
-    "contractId": "b1098da6-78b1-452c-ab96-5a1e5ca32dcb",
-    "amount": 11448.61,
-    "dueOn": "2025-07-28T08:20:52",
-    "terms": "Wear car fast positive before look.",
-    "status": "scheduled"
-  },
-  {
-    "id": "b9e9ae87-f0c9-45ea-b480-d4f3cdaf15ec",
-    "contractId": "324c96b8-3f86-4104-abac-ef69465b6b1c",
-    "amount": 1792.0,
-    "dueOn": "2025-05-14T21:05:18",
-    "terms": "Power say sell that. Send set fly today me. Everyone as generation main money but.",
-    "status": "refunded"
-  },
-  {
-    "id": "88dbb818-5563-47cf-a00f-bdf0f4b1190d",
-    "contractId": "04e84078-a4c2-40b4-aa07-1bca3261b9a7",
-    "amount": 9427.92,
-    "dueOn": "2025-07-22T23:10:44",
-    "terms": "Draw American first call. Hard day religious program within.",
-    "status": "refunded"
-  },
-  {
-    "id": "3d904015-c3bc-4c93-b8f9-15ea1a0f87e6",
-    "contractId": "5f212d86-859c-41cc-97b5-2eb360a3e604",
-    "amount": 2260.15,
-    "dueOn": "2025-07-21T08:39:22",
-    "terms": "Positive far time wide senior yes. Son rock two full. Rule too cause nearly.",
-    "status": "scheduled"
-  },
-  {
-    "id": "c7eed69a-5bf6-4a86-8c2e-cd63dc20816e",
-    "contractId": "d8def275-9501-46bb-9380-199ce2615c6a",
-    "amount": 4890.57,
-    "dueOn": "2025-07-14T22:54:46",
-    "terms": "Base support quality. Wish hour make owner.",
-    "status": "refunded"
-  },
-  {
-    "id": "6ff586e2-184d-4103-a4b2-a166d995ed25",
-    "contractId": "4712c4d4-cfa9-41d9-9391-584bfe84c2f4",
-    "amount": 3808.5,
-    "dueOn": "2025-07-23T05:05:45",
-    "terms": "Make state few one management science different. Child feel policy.",
-    "status": "scheduled"
-  },
-  {
-    "id": "04813b88-a5f0-477d-9070-63ff30f01ef7",
-    "contractId": "724b4e5d-3525-4f5d-9bc2-1201f2c52fa5",
-    "amount": 7360.61,
-    "dueOn": "2025-07-24T07:31:00",
-    "terms": "Campaign reason read film decide. Interesting several born affect.",
-    "status": "processing"
-  },
-  {
-    "id": "d1fe5bbf-d37f-4af4-b7ad-94ba64b68351",
-    "contractId": "97b6f0aa-f33a-4806-b41f-320c9d959b87",
-    "amount": 3160.76,
-    "dueOn": "2025-07-27T21:13:06",
-    "terms": "Talk sit party measure. Between official add describe. Who commercial senior above rise.",
-    "status": "due"
-  },
-  {
-    "id": "660ff4d9-3294-4d41-a615-9212d2c46714",
-    "contractId": "54bd285e-ab36-4cfc-9433-189f16dff93c",
-    "amount": 5781.5,
-    "dueOn": "2025-07-24T01:19:35",
-    "terms": "Century husband opportunity big. Ask window full organization.",
-    "status": "failed"
-  },
-  {
-    "id": "8547438f-93a2-4de0-a818-95a561e6dbb3",
-    "contractId": "f1fe61d2-d55e-4cee-955d-21d256d36130",
-    "amount": 2414.8,
-    "dueOn": "2025-06-11T05:54:00",
-    "terms": "Marriage ago condition painting.",
-    "status": "scheduled"
-  },
-  {
-    "id": "9555d7f2-a6cf-40f8-ae64-20aed91d15e2",
-    "contractId": "3bf91d22-2e91-47c7-93e3-96ff19a85855",
-    "amount": 6165.1,
-    "dueOn": "2025-07-26T07:13:17",
-    "terms": "Degree enter father of source person when. Behind front attack song little decide somebody prepare.",
-    "status": "due"
-  },
-  {
-    "id": "9abbd491-68aa-47e3-95f6-5d491c907e47",
-    "contractId": "b1098da6-78b1-452c-ab96-5a1e5ca32dcb",
-    "amount": 11974.76,
-    "dueOn": "2025-06-22T22:22:48",
-    "terms": "Speak table trade various risk art customer. Challenge character rate feel itself five store.",
-    "status": "due"
-  },
-  {
-    "id": "3ddb0fc0-32c5-4ff2-be24-0104237b1380",
-    "contractId": "3b4b77b6-102a-48a7-891f-697e27c07e89",
-    "amount": 3350.25,
-    "dueOn": "2025-06-11T11:33:20",
-    "terms": "Yard instead town dark evening ahead smile. Probably compare system white magazine. Area to finish.",
-    "status": "processing"
-  },
-  {
-    "id": "d4e723a6-6e83-4165-b38c-585a41a48e43",
-    "contractId": "dd37009d-8898-471d-ac65-13a06b165cfe",
-    "amount": 460.97,
-    "dueOn": "2025-07-28T16:28:12",
-    "terms": "Education his police red total.",
-    "status": "scheduled"
-  },
-  {
-    "id": "24c790db-414d-4fc3-a9ff-682f47a84907",
-    "contractId": "dd37009d-8898-471d-ac65-13a06b165cfe",
-    "amount": 1374.09,
-    "dueOn": "2025-07-28T16:00:10",
-    "terms": "Seven political contain. Social carry husband pick finish bank. Economic require should power.",
-    "status": "refunded"
-  },
-  {
-    "id": "38353d3a-26e3-4481-8163-ccd1e4c3a11a",
-    "contractId": "5a38038f-8dcd-4b63-b7c4-efa21a277d78",
-    "amount": 1625.37,
-    "dueOn": "2025-07-23T19:12:32",
-    "terms": "Way type positive. Director become leg energy system anyone peace outside.",
-    "status": "completed"
-  },
-  {
-    "id": "411c3bc1-da64-4ae7-a9d9-07d679264c55",
-    "contractId": "97b6f0aa-f33a-4806-b41f-320c9d959b87",
-    "amount": 8164.66,
-    "dueOn": "2025-07-27T15:16:26",
-    "terms": "High issue deal democratic station risk country. Impact certainly face energy.",
-    "status": "processing"
-  }
-]
+    {
+      "id": "8e1ce9d9-78ee-4c5b-8df6-72e45396f737",
+      "contract_id": "8a16ea40-36ff-474f-b4c0-7bc5aa9fd962",
+      "amount": 2703.41,
+      "due_on": "2025-12-28T02:38:42",
+      "terms": "Office represent least available.",
+      "status": "processing"
+    },
+    {
+      "id": "91bcee76-6d91-4304-9e22-8ca8cfe5e1fe",
+      "contract_id": "8a16ea40-36ff-474f-b4c0-7bc5aa9fd962",
+      "amount": 2703.42,
+      "due_on": "2024-10-17T21:40:50",
+      "terms": "Structure chair same impact no almost international.",
+      "status": "scheduled"
+    },
+    {
+      "id": "d6983f28-c045-4657-a1a1-7a3ab7aaec88",
+      "contract_id": "8dd60c58-04e3-40da-ab22-0596c0543936",
+      "amount": 2222.52,
+      "due_on": "2025-03-09T01:13:32",
+      "terms": "Base play kitchen try.",
+      "status": "completed"
+    },
+    {
+      "id": "b53bc786-5d50-4f85-b33d-6b6f642234d7",
+      "contract_id": "8dd60c58-04e3-40da-ab22-0596c0543936",
+      "amount": 2222.52,
+      "due_on": "2026-07-12T08:00:02",
+      "terms": "Country program prove very street know rich medical.",
+      "status": "scheduled"
+    },
+    {
+      "id": "f1e49d6e-979d-43d9-ab81-52f5916fb2fd",
+      "contract_id": "9afabbdd-01b6-4d34-8e89-4ba448800396",
+      "amount": 2451.09,
+      "due_on": "2024-11-15T11:05:53",
+      "terms": "Music rest until new enter message reason.",
+      "status": "completed"
+    },
+    {
+      "id": "5d383f47-a6a5-496f-9aa3-781e9ddcbaee",
+      "contract_id": "9afabbdd-01b6-4d34-8e89-4ba448800396",
+      "amount": 2451.08,
+      "due_on": "2025-03-10T10:46:20",
+      "terms": "Capital cover feel debate family among.",
+      "status": "completed"
+    },
+    {
+      "id": "cb1bf7c6-c794-4156-a3ca-d97451bf69b6",
+      "contract_id": "f17f444d-b57c-40f5-828e-b3ca687ab72e",
+      "amount": 3162.3,
+      "due_on": "2025-07-06T09:26:55",
+      "terms": "Reality action coach billion industry themselves especially.",
+      "status": "scheduled"
+    },
+    {
+      "id": "1e6097fd-c0da-4cb9-9146-7ac2495f9153",
+      "contract_id": "f17f444d-b57c-40f5-828e-b3ca687ab72e",
+      "amount": 3162.3,
+      "due_on": "2025-06-09T09:28:45",
+      "terms": "Government choice before Democrat among hotel service.",
+      "status": "processing"
+    },
+    {
+      "id": "071c683c-3c8b-408f-a7f0-892f0085542c",
+      "contract_id": "c48d5b4f-8b4c-4b2f-a4f2-e8c5e204cf53",
+      "amount": 1821.79,
+      "due_on": "2025-03-05T18:26:26",
+      "terms": "Writer mean series nothing nothing sit.",
+      "status": "processing"
+    },
+    {
+      "id": "367eba0c-7c78-427b-802f-24fa6d955241",
+      "contract_id": "c48d5b4f-8b4c-4b2f-a4f2-e8c5e204cf53",
+      "amount": 1821.79,
+      "due_on": "2026-04-02T18:35:18",
+      "terms": "Day claim contain discuss bad.",
+      "status": "due"
+    },
+    {
+      "id": "18838fa0-b2da-4e3f-818d-1b3484857bf6",
+      "contract_id": "aaa8b4e0-34b9-481f-bdf3-92d8d69edcc0",
+      "amount": 899.84,
+      "due_on": "2025-01-28T11:05:37",
+      "terms": "However picture agree pass report through.",
+      "status": "due"
+    },
+    {
+      "id": "fc7ed48f-c683-4987-ad83-9ac788250c63",
+      "contract_id": "aaa8b4e0-34b9-481f-bdf3-92d8d69edcc0",
+      "amount": 899.83,
+      "due_on": "2025-12-23T20:48:35",
+      "terms": "Note fear him.",
+      "status": "completed"
+    },
+    {
+      "id": "b7b8d6f9-502a-43ea-9752-0a4ba41d936d",
+      "contract_id": "d7324abe-198e-49d0-93e8-edf9e14d9667",
+      "amount": 3389.03,
+      "due_on": "2025-11-20T18:49:26",
+      "terms": "Become leader difference ok some group.",
+      "status": "scheduled"
+    },
+    {
+      "id": "0beccf4d-6003-4595-aa67-8d06f556d717",
+      "contract_id": "d7324abe-198e-49d0-93e8-edf9e14d9667",
+      "amount": 3389.02,
+      "due_on": "2025-07-25T14:30:29",
+      "terms": "Financial scientist sign attention provide.",
+      "status": "scheduled"
+    },
+    {
+      "id": "c80eddff-48aa-4e25-ad09-95e34539b08d",
+      "contract_id": "67c963a9-7fa6-4543-9ab1-960bbc72d3d6",
+      "amount": 1969.24,
+      "due_on": "2025-07-05T11:30:54",
+      "terms": "Manager major newspaper rock mind.",
+      "status": "scheduled"
+    },
+    {
+      "id": "f772b2ae-d0f8-48a9-8ffa-38dbf3b600e0",
+      "contract_id": "67c963a9-7fa6-4543-9ab1-960bbc72d3d6",
+      "amount": 1969.24,
+      "due_on": "2024-12-04T12:49:45",
+      "terms": "Writer modern available include.",
+      "status": "due"
+    },
+    {
+      "id": "d9ab4e80-75a1-4b9e-862e-ae158ff45ed8",
+      "contract_id": "c2ef9c48-d670-47a7-9899-53256b4dbe40",
+      "amount": 1891.38,
+      "due_on": "2026-06-14T09:24:17",
+      "terms": "Well condition not who future people.",
+      "status": "due"
+    },
+    {
+      "id": "f1284341-34a3-4d75-8457-4f2fa346b2d7",
+      "contract_id": "c2ef9c48-d670-47a7-9899-53256b4dbe40",
+      "amount": 1891.38,
+      "due_on": "2026-02-06T10:10:55",
+      "terms": "Quality information citizen without Mrs such job.",
+      "status": "scheduled"
+    },
+    {
+      "id": "b404757b-de70-43e7-b43a-2877869074e2",
+      "contract_id": "33c3aea3-77b9-4794-9727-2c24beffdceb",
+      "amount": 2281.55,
+      "due_on": "2026-03-29T13:59:50",
+      "terms": "Ability wide attention fact level never view people.",
+      "status": "completed"
+    },
+    {
+      "id": "a4533d1d-21ab-4495-882a-b62ccd944855",
+      "contract_id": "33c3aea3-77b9-4794-9727-2c24beffdceb",
+      "amount": 2281.56,
+      "due_on": "2025-12-20T21:24:06",
+      "terms": "Decision TV industry goal position.",
+      "status": "scheduled"
+    }
+  ]

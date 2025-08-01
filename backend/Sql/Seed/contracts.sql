@@ -17,5 +17,5 @@ INSERT INTO contracts (
     @AgreedValue,
     @OfferedOn,
     @AcceptedOn,
-    CAST(@StatusString AS contractstatus)
+    @StatusString::contractstatus
 );
