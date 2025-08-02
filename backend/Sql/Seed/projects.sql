@@ -17,5 +17,5 @@ INSERT INTO projects (
     @DraftedOn,
     @OpenedOn,
     @StartingAmount,
-    @StatusString::projectsstatus
+    @StatusString::projectstatus
 );

@@ -1,162 +1,98 @@
 [
     {
-      "id": "8e1ce9d9-78ee-4c5b-8df6-72e45396f737",
-      "contract_id": "8a16ea40-36ff-474f-b4c0-7bc5aa9fd962",
-      "amount": 2703.41,
-      "due_on": "2025-12-28T02:38:42",
-      "terms": "Office represent least available.",
+      "id": "9081e664-0c5f-4102-8089-5a792b971479",
+      "contractid": "c88d92d1-ff36-4318-8359-a6387cb371c9",
+      "amount": 3451.39,
+      "dueon": "2025-08-02T15:51:20",
+      "terms": "Talk ago green stock color.",
+      "status": "failed"
+    },
+    {
+      "id": "a6ef2df7-7efb-4618-8bb1-d4d29b2bac85",
+      "contractid": "c88d92d1-ff36-4318-8359-a6387cb371c9",
+      "amount": 3451.39,
+      "dueon": "2025-08-02T15:50:25",
+      "terms": "Apply ahead thought side name suddenly.",
+      "status": "due"
+    },
+    {
+      "id": "9a9c8252-649c-4113-a3e4-61c62a8f0267",
+      "contractid": "8a1437f1-60dd-403e-9a7e-c5eb287f6cdc",
+      "amount": 5022.67,
+      "dueon": "2025-08-02T15:50:15",
+      "terms": "World reveal stand election affect partner seek up.",
+      "status": "failed"
+    },
+    {
+      "id": "f177e72f-13c6-4114-bed6-186c19aaedf3",
+      "contractid": "95c319e8-21ea-4472-a042-587e493a3d05",
+      "amount": 1567.62,
+      "dueon": "2025-08-02T15:50:15",
+      "terms": "Stuff rock foreign pressure maybe.",
+      "status": "due"
+    },
+    {
+      "id": "6675379a-cd86-4483-9e1b-0506ae58accc",
+      "contractid": "95c319e8-21ea-4472-a042-587e493a3d05",
+      "amount": 1567.62,
+      "dueon": "2025-08-02T15:49:56",
+      "terms": "Live environmental almost hand fear thus north.",
+      "status": "failed"
+    },
+    {
+      "id": "eefddecf-b5c3-470e-91e4-3bb17427515d",
+      "contractid": "be1c9bce-b55b-47e5-8f08-ce0f9418686e",
+      "amount": 4785.19,
+      "dueon": "2025-08-02T15:50:36",
+      "terms": "Forward spend factor they magazine.",
+      "status": "refunded"
+    },
+    {
+      "id": "48462c06-52bc-44d1-aceb-25ab1c1a8c77",
+      "contractid": "be1c9bce-b55b-47e5-8f08-ce0f9418686e",
+      "amount": 4785.19,
+      "dueon": "2025-08-02T15:52:36",
+      "terms": "Indicate wish compare world.",
+      "status": "refunded"
+    },
+    {
+      "id": "7393dddc-bed9-4f96-a3ff-de371c0e1386",
+      "contractid": "266291ff-1d33-4f44-a9d9-f0a3e8fa124b",
+      "amount": 2870.03,
+      "dueon": "2025-08-02T15:52:30",
+      "terms": "Ever he war modern position.",
+      "status": "failed"
+    },
+    {
+      "id": "f3f4db10-3c85-4f67-9499-b458f61f55d0",
+      "contractid": "266291ff-1d33-4f44-a9d9-f0a3e8fa124b",
+      "amount": 2870.03,
+      "dueon": "2025-08-02T15:52:36",
+      "terms": "Type improve simple know garden say pass finally.",
+      "status": "completed"
+    },
+    {
+      "id": "8df1c511-5448-462b-9579-faf652624d2e",
+      "contractid": "983a8000-5fc1-46fb-b455-75da6995dd4a",
+      "amount": 2782.5,
+      "dueon": "2025-08-02T15:52:07",
+      "terms": "Strategy against value quickly.",
       "status": "processing"
     },
     {
-      "id": "91bcee76-6d91-4304-9e22-8ca8cfe5e1fe",
-      "contract_id": "8a16ea40-36ff-474f-b4c0-7bc5aa9fd962",
-      "amount": 2703.42,
-      "due_on": "2024-10-17T21:40:50",
-      "terms": "Structure chair same impact no almost international.",
-      "status": "scheduled"
-    },
-    {
-      "id": "d6983f28-c045-4657-a1a1-7a3ab7aaec88",
-      "contract_id": "8dd60c58-04e3-40da-ab22-0596c0543936",
-      "amount": 2222.52,
-      "due_on": "2025-03-09T01:13:32",
-      "terms": "Base play kitchen try.",
+      "id": "99f96c66-97b9-482c-a452-079f62741376",
+      "contractid": "983a8000-5fc1-46fb-b455-75da6995dd4a",
+      "amount": 2782.5,
+      "dueon": "2025-08-02T15:52:36",
+      "terms": "Value institution wait maybe before.",
       "status": "completed"
     },
     {
-      "id": "b53bc786-5d50-4f85-b33d-6b6f642234d7",
-      "contract_id": "8dd60c58-04e3-40da-ab22-0596c0543936",
-      "amount": 2222.52,
-      "due_on": "2026-07-12T08:00:02",
-      "terms": "Country program prove very street know rich medical.",
-      "status": "scheduled"
-    },
-    {
-      "id": "f1e49d6e-979d-43d9-ab81-52f5916fb2fd",
-      "contract_id": "9afabbdd-01b6-4d34-8e89-4ba448800396",
-      "amount": 2451.09,
-      "due_on": "2024-11-15T11:05:53",
-      "terms": "Music rest until new enter message reason.",
+      "id": "1063b857-3aa7-440d-8af2-ac0ee588e33e",
+      "contractid": "983a8000-5fc1-46fb-b455-75da6995dd4a",
+      "amount": 2782.5,
+      "dueon": "2025-08-02T15:50:52",
+      "terms": "Level wind finally pretty well list per.",
       "status": "completed"
-    },
-    {
-      "id": "5d383f47-a6a5-496f-9aa3-781e9ddcbaee",
-      "contract_id": "9afabbdd-01b6-4d34-8e89-4ba448800396",
-      "amount": 2451.08,
-      "due_on": "2025-03-10T10:46:20",
-      "terms": "Capital cover feel debate family among.",
-      "status": "completed"
-    },
-    {
-      "id": "cb1bf7c6-c794-4156-a3ca-d97451bf69b6",
-      "contract_id": "f17f444d-b57c-40f5-828e-b3ca687ab72e",
-      "amount": 3162.3,
-      "due_on": "2025-07-06T09:26:55",
-      "terms": "Reality action coach billion industry themselves especially.",
-      "status": "scheduled"
-    },
-    {
-      "id": "1e6097fd-c0da-4cb9-9146-7ac2495f9153",
-      "contract_id": "f17f444d-b57c-40f5-828e-b3ca687ab72e",
-      "amount": 3162.3,
-      "due_on": "2025-06-09T09:28:45",
-      "terms": "Government choice before Democrat among hotel service.",
-      "status": "processing"
-    },
-    {
-      "id": "071c683c-3c8b-408f-a7f0-892f0085542c",
-      "contract_id": "c48d5b4f-8b4c-4b2f-a4f2-e8c5e204cf53",
-      "amount": 1821.79,
-      "due_on": "2025-03-05T18:26:26",
-      "terms": "Writer mean series nothing nothing sit.",
-      "status": "processing"
-    },
-    {
-      "id": "367eba0c-7c78-427b-802f-24fa6d955241",
-      "contract_id": "c48d5b4f-8b4c-4b2f-a4f2-e8c5e204cf53",
-      "amount": 1821.79,
-      "due_on": "2026-04-02T18:35:18",
-      "terms": "Day claim contain discuss bad.",
-      "status": "due"
-    },
-    {
-      "id": "18838fa0-b2da-4e3f-818d-1b3484857bf6",
-      "contract_id": "aaa8b4e0-34b9-481f-bdf3-92d8d69edcc0",
-      "amount": 899.84,
-      "due_on": "2025-01-28T11:05:37",
-      "terms": "However picture agree pass report through.",
-      "status": "due"
-    },
-    {
-      "id": "fc7ed48f-c683-4987-ad83-9ac788250c63",
-      "contract_id": "aaa8b4e0-34b9-481f-bdf3-92d8d69edcc0",
-      "amount": 899.83,
-      "due_on": "2025-12-23T20:48:35",
-      "terms": "Note fear him.",
-      "status": "completed"
-    },
-    {
-      "id": "b7b8d6f9-502a-43ea-9752-0a4ba41d936d",
-      "contract_id": "d7324abe-198e-49d0-93e8-edf9e14d9667",
-      "amount": 3389.03,
-      "due_on": "2025-11-20T18:49:26",
-      "terms": "Become leader difference ok some group.",
-      "status": "scheduled"
-    },
-    {
-      "id": "0beccf4d-6003-4595-aa67-8d06f556d717",
-      "contract_id": "d7324abe-198e-49d0-93e8-edf9e14d9667",
-      "amount": 3389.02,
-      "due_on": "2025-07-25T14:30:29",
-      "terms": "Financial scientist sign attention provide.",
-      "status": "scheduled"
-    },
-    {
-      "id": "c80eddff-48aa-4e25-ad09-95e34539b08d",
-      "contract_id": "67c963a9-7fa6-4543-9ab1-960bbc72d3d6",
-      "amount": 1969.24,
-      "due_on": "2025-07-05T11:30:54",
-      "terms": "Manager major newspaper rock mind.",
-      "status": "scheduled"
-    },
-    {
-      "id": "f772b2ae-d0f8-48a9-8ffa-38dbf3b600e0",
-      "contract_id": "67c963a9-7fa6-4543-9ab1-960bbc72d3d6",
-      "amount": 1969.24,
-      "due_on": "2024-12-04T12:49:45",
-      "terms": "Writer modern available include.",
-      "status": "due"
-    },
-    {
-      "id": "d9ab4e80-75a1-4b9e-862e-ae158ff45ed8",
-      "contract_id": "c2ef9c48-d670-47a7-9899-53256b4dbe40",
-      "amount": 1891.38,
-      "due_on": "2026-06-14T09:24:17",
-      "terms": "Well condition not who future people.",
-      "status": "due"
-    },
-    {
-      "id": "f1284341-34a3-4d75-8457-4f2fa346b2d7",
-      "contract_id": "c2ef9c48-d670-47a7-9899-53256b4dbe40",
-      "amount": 1891.38,
-      "due_on": "2026-02-06T10:10:55",
-      "terms": "Quality information citizen without Mrs such job.",
-      "status": "scheduled"
-    },
-    {
-      "id": "b404757b-de70-43e7-b43a-2877869074e2",
-      "contract_id": "33c3aea3-77b9-4794-9727-2c24beffdceb",
-      "amount": 2281.55,
-      "due_on": "2026-03-29T13:59:50",
-      "terms": "Ability wide attention fact level never view people.",
-      "status": "completed"
-    },
-    {
-      "id": "a4533d1d-21ab-4495-882a-b62ccd944855",
-      "contract_id": "33c3aea3-77b9-4794-9727-2c24beffdceb",
-      "amount": 2281.56,
-      "due_on": "2025-12-20T21:24:06",
-      "terms": "Decision TV industry goal position.",
-      "status": "scheduled"
     }
   ]

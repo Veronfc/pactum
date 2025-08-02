@@ -4,8 +4,9 @@ namespace backend.Models
   {
     public Guid Id { get; set; }
     public Guid ContractorId { get; set; }
-    public Guid ProjectId { get; set; }
     public Guid BidId { get; set; }
+    public Guid? ProjectId { get; set; }
+    public Guid? ModuleId { get; set; }
     public string Terms { get; set; }
     public decimal AgreedValue { get; set; }
     public DateTime OfferedOn { get; set; }

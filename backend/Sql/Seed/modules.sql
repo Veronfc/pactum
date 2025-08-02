@@ -3,8 +3,6 @@ INSERT INTO modules (
     project_id,
     title,
     description,
-    drafted_on,
-    opened_on,
     starting_amount,
     status
 ) VALUES (
@@ -12,8 +10,6 @@ INSERT INTO modules (
     @ProjectId,
     @Title,
     @Description,
-    @DraftedOn,
-    @OpenedOn,
     @StartingAmount,
     @StatusString::modulestatus
 );

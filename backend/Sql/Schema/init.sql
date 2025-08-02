@@ -73,12 +73,13 @@ CREATE TABLE projects (
     DEFAULT CURRENT_TIMESTAMP 
     NOT NULL,
   opened_on timestamptz
-    CHECK (opened_on >= drafted_on),
+    CONSTRAINT project_opened_on_or_after_drafted CHECK (opened_on >= drafted_on),
   starting_amount numeric(10,2)
-    CHECK (starting_amount > 0),
-  status projectstatus DEFAULT 'draft' 
+    CONSTRAINT project_amount_is_positive CHECK (starting_amount > 0),
+  status projectstatus 
+    DEFAULT 'draft' 
     NOT NULL,
-  CHECK (status != 'open' OR opened_on IS NOT NULL)
+  CONSTRAINT project_open_has_opened_on_date CHECK (status != 'open' OR opened_on IS NOT NULL)
 );
 
 -- Join indices
@@ -117,18 +118,16 @@ CREATE TABLE modules (
   description text 
     NOT NULL,
   starting_amount numeric(10,2)
-    CHECK (starting_amount > 0),
+    CONSTRAINT module_amount_is_positive CHECK (starting_amount > 0),
   status modulestatus 
     DEFAULT 'draft' 
-    NOT NULL,
+    NOT NULL
 );
 
 -- Join indices
 CREATE INDEX index_modules_project_id ON modules (project_id);
 
 -- Sorting indices
-CREATE INDEX index_modules_drafted_on ON modules (drafted_on);
-CREATE INDEX index_modules_opened_on ON modules (opened_on);
 CREATE INDEX index_modules_starting_amount ON modules (starting_amount);
 
 -- Filtering indices
@@ -151,7 +150,7 @@ CREATE TABLE bids (
     DEFAULT gen_random_uuid() 
     PRIMARY KEY,
   bidder_id uuid 
-    REFERENCES users (id) 
+    REFERENCES users (id)
     NOT NULL,
   project_id uuid 
     REFERENCES projects (id),
@@ -159,14 +158,14 @@ CREATE TABLE bids (
     REFERENCES modules (id),
   amount numeric(10,2) 
     NOT NULL 
-    CHECK (amount > 0),
+    CONSTRAINT bid_amount_is_positive CHECK (amount > 0),
   submitted_on timestamptz 
     DEFAULT CURRENT_TIMESTAMP 
     NOT NULL,
   status bidstatus 
     DEFAULT 'submitted' 
     NOT NULL,
-  CHECK (
+  CONSTRAINT bid_target_is_mutually_exclusive CHECK (
     (project_id IS NOT NULL AND module_id IS NULL) OR
     (module_id IS NOT NULL AND project_id IS NULL)
   )
@@ -200,26 +199,31 @@ CREATE TABLE contracts (
   contractor_id uuid 
     REFERENCES users (id) 
     NOT NULL,
-  project_id uuid 
-    REFERENCES projects (id) 
-    NOT NULL,
   bid_id uuid 
     REFERENCES bids (id) 
     NOT NULL,
+  project_id uuid 
+    REFERENCES projects (id),
+  module_id uuid
+    REFERENCES modules (id),
   terms text 
     NOT NULL,
   agreed_value numeric(10,2) 
     NOT NULL
-    CHECK (agreed_value > 0),
+    CONSTRAINT contract_value_is_positive CHECK (agreed_value > 0),
   offered_on timestamptz 
     DEFAULT CURRENT_TIMESTAMP 
-    NOT NULL
+    NOT NULL,
   accepted_on timestamptz
-    CHECK (accepted_on >= offered_on),
+    CONSTRAINT contract_accepted_on_or_after_offered CHECK (accepted_on >= offered_on),
   status contractstatus 
     DEFAULT 'offered' 
     NOT NULL,
-  CHECK (status != 'active' OR accepted_on IS NOT NULL)
+  CONSTRAINT contract_active_has_accepted_on_date CHECK (status != 'active' OR accepted_on IS NOT NULL),
+  CONSTRAINT contract_target_is_mutually_exclusive CHECK (
+    (project_id IS NOT NULL AND module_id IS NULL) OR
+    (module_id IS NOT NULL AND project_id IS NULL)
+  )
 );
 
 -- Join indices
@@ -254,10 +258,10 @@ CREATE TABLE payments (
     NOT NULL,
   amount numeric(10,2) 
     NOT NULL
-    CHECK (amount > 0),
+    CONSTRAINT payment_amount_is_positive CHECK (amount > 0),
   due_on timestamptz 
     DEFAULT CURRENT_TIMESTAMP 
-    NOT NULL
+    NOT NULL,
   terms text 
     NOT NULL,
   status paymentstatus 

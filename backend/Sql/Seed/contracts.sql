@@ -1,8 +1,9 @@
 INSERT INTO contracts (
     id,
     contractor_id,
-    project_id,
     bid_id,
+    project_id,
+    module_id,
     terms,
     agreed_value,
     offered_on,
@@ -11,8 +12,9 @@ INSERT INTO contracts (
 ) VALUES (
     @Id,
     @ContractorId,
-    @ProjectId,
     @BidId,
+    @ProjectId,
+    @ModuleId,
     @Terms,
     @AgreedValue,
     @OfferedOn,
