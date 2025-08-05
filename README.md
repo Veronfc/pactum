@@ -2,7 +2,7 @@
 
 # 🏛️ Pactum
 
-A freelance job platform for IT professionals, built to demonstrate SQL mastery and real-world data modeling.
+A freelance job platform for IT professionals, built to demonstrate SQL knowledge and real-world data modeling.
 
 ## 📋 Overview
 
@@ -18,9 +18,9 @@ Pactum connects clients with IT contractors through a bidding system that suppor
 ## ✨ Key Features
 
 ### ✅ Implemented
+- [x] Flexible data schema with PostgreSQL enums and constraints
 
 ### 🚧 In Progress
-- [ ] Flexible data schema with PostgreSQL enums and constraints
 - [ ] RESTful API with DTOs
 
 ### 📅 Planned
@@ -43,8 +43,8 @@ This portfolio project focuses on:
 ## 📈 Progress Checklist
 
 - [x] Phase 0: Environment setup and project structure
-- [ ] Phase 1: Core schema design (users, projects, bids, contracts)
-- [ ] Phase 2: Modular bidding system
+- [x] Phase 1: Core schema design (users, projects, bids, contracts)
+- [x] Phase 2: Modular bidding system
 - [ ] Phase 3: Categorization and tagging
 - [ ] Phase 4: Time-series analytics
 - [ ] Phase 5: Performance optimization
