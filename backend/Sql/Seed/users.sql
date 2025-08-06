@@ -1,5 +1,6 @@
 INSERT INTO users (
     id,
+    role,
     username,
     password_hash,
     password_salt,
@@ -10,6 +11,7 @@ INSERT INTO users (
     joined_on
 ) VALUES (
     @Id,
+    @Role,
     @Username,
     @PasswordHash,
     @PasswordSalt,

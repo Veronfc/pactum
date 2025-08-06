@@ -44,10 +44,10 @@ namespace backend.Controllers
       return Created("", new { message = "Tables and types created." });
     }
 
-    [HttpGet("destroy")]
+    [HttpGet("drop")]
     public async Task<IActionResult> DestroySchema()
     {
-      string sql = _sqlService.GetSql("Schema.destroy");
+      string sql = _sqlService.GetSql("Schema.drop");
 
       using NpgsqlConnection connection = new(CONNECTION_STRING);
 

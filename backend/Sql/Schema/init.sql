@@ -4,11 +4,17 @@
 
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
 
+CREATE TYPE userrole AS enum (
+  'admin',
+  'user'
+);
 
 CREATE TABLE users (
   id uuid 
     DEFAULT gen_random_uuid() 
     PRIMARY KEY,
+  role userrole
+    DEFAULT 'user',
   username varchar(30) 
     NOT NULL 
     UNIQUE,

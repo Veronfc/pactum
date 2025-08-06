@@ -1,6 +1,7 @@
 .env
+
 cert
 *.pem
 *.ps1
-plan.md
+
 reports.md
