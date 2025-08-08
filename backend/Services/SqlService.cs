@@ -18,6 +18,22 @@ namespace backend.Services
     private readonly Assembly _assembly;
     private readonly string CONNECTION_STRING = Environment.GetEnvironmentVariable("CONNECTION_STRING") ?? throw new ArgumentNullException();
 
+    private readonly string SQL_DATE_FILTER_TEMP_TABLE =
+    @"WITH dates AS (
+      SELECT
+        coalesce(@StartDate,
+          CASE
+            WHEN @TimeRange = 'day' THEN (now() - '24 hours'::interval)
+            WHEN @TimeRange = 'week' THEN (now() - '7 days'::interval)
+            WHEN @TimeRange = 'month' THEN (now() - '30 days'::interval)
+            WHEN @TimeRange = 'year' THEN (now() - '1 year'::interval)
+            ELSE NULL
+          END) AS start_date,
+        coalesce(@EndDate, now()) AS end_date
+    )";
+
+    private readonly string SQL_LIMIT_FILTER = @" LIMIT CASE WHEN @Limit IS NOT NULL THEN @Limit END";
+
     public SqlService()
     {
       _assembly = Assembly.GetExecutingAssembly();
@@ -42,7 +58,7 @@ namespace backend.Services
 
       try
       {
-        var rows = await connection.QueryAsync(sql, options);
+        var rows = await connection.QueryAsync(SQL_DATE_FILTER_TEMP_TABLE + sql + SQL_LIMIT_FILTER, options);
 
         return new GetReportResult(200, JsonSerializer.Serialize(rows, new JsonSerializerOptions { WriteIndented = true }));
       }

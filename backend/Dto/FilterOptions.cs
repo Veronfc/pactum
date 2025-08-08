@@ -1,9 +1,14 @@
+using backend.Models;
+
 namespace backend.Dto
 {
     public record FilterOptions(
-        string? ContractorId = null,
+        int? Limit = null,
         DateTime? StartDate = null,
         DateTime? EndDate = null,
-        string? TimeRange = null
+        string? TimeRange = null,
+        Guid? ContractorId = null,
+        Guid? ProjectId = null,
+        string? ProjectStatus = null
     );
 }
